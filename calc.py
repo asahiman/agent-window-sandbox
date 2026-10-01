@@ -14,3 +14,9 @@ def div(a, b):
     if b == 0:
         raise ValueError("division by zero")
     return a / b
+
+
+def avg(values):
+    if not values:
+        raise ValueError("cannot compute average of empty list")
+    return sum(values) / len(values)
