@@ -7,3 +7,7 @@ def test_add():
 
 def test_sub():
     assert calc.sub(3, 1) == 2
+
+
+def test_mul():
+    assert calc.mul(3, 4) == 12
