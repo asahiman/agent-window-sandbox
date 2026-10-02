@@ -20,3 +20,9 @@ def avg(values):
     if not values:
         raise ValueError("cannot compute average of empty list")
     return sum(values) / len(values)
+
+
+def max_of(values):
+    if not values:
+        raise ValueError("cannot compute max of empty list")
+    return max(values)
