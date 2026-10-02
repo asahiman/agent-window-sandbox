@@ -23,3 +23,20 @@ def test_div():
 def test_div_by_zero():
     with pytest.raises(ValueError):
         calc.div(1, 0)
+
+
+def test_max_of_multiple():
+    assert calc.max_of([1, 5, 3]) == 5
+
+
+def test_max_of_single():
+    assert calc.max_of([7]) == 7
+
+
+def test_max_of_negatives():
+    assert calc.max_of([-5, -2, -9]) == -2
+
+
+def test_max_of_empty():
+    with pytest.raises(ValueError):
+        calc.max_of([])
