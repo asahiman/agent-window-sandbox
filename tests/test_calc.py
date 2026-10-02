@@ -53,3 +53,12 @@ def test_median_even():
 def test_median_empty():
     with pytest.raises(ValueError):
         calc.median([])
+
+
+def test_avg():
+    assert calc.avg([1, 2, 3]) == 2.0
+
+
+def test_avg_empty():
+    with pytest.raises(ValueError):
+        calc.avg([])
