@@ -26,3 +26,14 @@ def max_of(values):
     if not values:
         raise ValueError("cannot compute max of empty list")
     return max(values)
+
+
+def median(values):
+    if not values:
+        raise ValueError("cannot compute median of empty list")
+    s = sorted(values)
+    n = len(s)
+    mid = n // 2
+    if n % 2:
+        return s[mid]
+    return (s[mid - 1] + s[mid]) / 2

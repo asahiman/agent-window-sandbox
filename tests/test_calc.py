@@ -40,3 +40,16 @@ def test_max_of_negatives():
 def test_max_of_empty():
     with pytest.raises(ValueError):
         calc.max_of([])
+
+
+def test_median_odd():
+    assert calc.median([3, 1, 2]) == 2
+
+
+def test_median_even():
+    assert calc.median([4, 1, 3, 2]) == 2.5
+
+
+def test_median_empty():
+    with pytest.raises(ValueError):
+        calc.median([])
