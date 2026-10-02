@@ -40,3 +40,16 @@ def test_max_of_negatives():
 def test_max_of_empty():
     with pytest.raises(ValueError):
         calc.max_of([])
+
+
+def test_avg():
+    assert calc.avg([1, 2, 3]) == 2.0
+
+
+def test_avg_single():
+    assert calc.avg([4]) == 4.0
+
+
+def test_avg_empty():
+    with pytest.raises(ValueError):
+        calc.avg([])
