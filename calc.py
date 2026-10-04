@@ -34,6 +34,13 @@ def max_of(values):
     return max(values)
 
 
+def min_of(values):
+    """Return the smallest item in values, raising ValueError if empty."""
+    if not values:
+        raise ValueError("cannot compute min of empty list")
+    return min(values)
+
+
 def median(values):
     """Return the median of values, raising ValueError if empty."""
     if not values:
