@@ -62,3 +62,12 @@ def test_avg():
 def test_avg_empty():
     with pytest.raises(ValueError):
         calc.avg([])
+
+
+def test_min_of():
+    assert calc.min_of([3, 1, 2]) == 1
+
+
+def test_min_of_empty():
+    with pytest.raises(ValueError):
+        calc.min_of([])
