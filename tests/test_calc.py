@@ -71,3 +71,9 @@ def test_min_of():
 def test_min_of_empty():
     with pytest.raises(ValueError):
         calc.min_of([])
+
+
+def test_neg():
+    assert calc.neg(3) == -3
+    assert calc.neg(-2) == 2
+    assert calc.neg(0) == 0

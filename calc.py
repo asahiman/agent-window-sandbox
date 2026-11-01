@@ -51,3 +51,8 @@ def median(values):
     if n % 2:
         return s[mid]
     return (s[mid - 1] + s[mid]) / 2
+
+
+def neg(a):
+    """Return a with its sign flipped."""
+    return -a
