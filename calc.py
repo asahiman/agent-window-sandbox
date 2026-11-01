@@ -56,3 +56,14 @@ def median(values):
 def neg(a):
     """Return a with its sign flipped."""
     return -a
+
+
+def clamp(value, low, high):
+    """Return value limited to [low, high], raising ValueError if low > high."""
+    if low > high:
+        raise ValueError("low must not be greater than high")
+    if value < low:
+        return low
+    if value > high:
+        return high
+    return value

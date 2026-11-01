@@ -77,3 +77,14 @@ def test_neg():
     assert calc.neg(3) == -3
     assert calc.neg(-2) == 2
     assert calc.neg(0) == 0
+
+
+def test_clamp():
+    assert calc.clamp(5, 0, 3) == 3
+    assert calc.clamp(-1, 0, 3) == 0
+    assert calc.clamp(2, 0, 3) == 2
+    assert calc.clamp(0, 0, 3) == 0
+    assert calc.clamp(3, 0, 3) == 3
+    assert calc.clamp(7, 2, 2) == 2
+    with pytest.raises(ValueError):
+        calc.clamp(1, 3, 0)
