@@ -3,11 +3,11 @@
   "gpu": false,
   "smoke": {
     "timeout_seconds": 300,
-    "commands": [{"name": "summarize", "command": "python experiments/26/summarize.py"}]
+    "commands": [{"name": "summarize", "command": "python3 experiments/26/summarize.py"}]
   },
   "full": {
     "timeout_seconds": 600,
-    "commands": [{"name": "summarize", "command": "python experiments/26/summarize.py"}]
+    "commands": [{"name": "summarize", "command": "python3 experiments/26/summarize.py"}]
   },
   "outputs": ["metrics.json"]
 }
